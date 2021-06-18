@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Hungrydient</ion-title>
+    <ion-title>RecipeApp</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-searchbar 
@@ -14,7 +14,7 @@
     </ion-segment-button>
   </ion-segment>
 <ion-content>
-  <div *ngFor="let recipe of recipes$ | async">
+  <div *ngFor="let recipe of (recipes$ | async)">
     <app-recipe-item [recipes]="recipe"></app-recipe-item>
   </div>
 </ion-content>

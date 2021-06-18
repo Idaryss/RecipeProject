@@ -55,9 +55,9 @@ export class RecipePage implements OnInit{
   ngOnInit() {
    // this.recipesNew = this.store.select(fromRecipe.selectAll);
  //   this.store.dispatch(new actions.Query());
-
- this.store.dispatch(actions.loadRecipes());
  this.loadRecipes();
+ this.store.dispatch(actions.loadRecipes());
+
   }
 
   // createRecipe() {
